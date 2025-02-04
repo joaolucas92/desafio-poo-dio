@@ -28,6 +28,7 @@ public class Mentoria extends Conteudo{
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
                 ", data=" + data +
+                ", professor='" + (getProfessor() != null ? getProfessor().getNome() : "Nenhum") + '\'' +
                 '}';
     }
 }

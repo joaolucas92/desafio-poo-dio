@@ -2,6 +2,7 @@ import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.Professor;
 
 import java.time.LocalDate;
 
@@ -21,7 +22,16 @@ public class Main {
         mentoria.setTitulo("mentoria de java");
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
-
+        
+        Professor professor1 = new Professor();
+        professor1.setNome("Julio");
+        curso1.setProfessor(professor1);
+        
+        Professor professor2 = new Professor();
+        professor2.setNome("Maria");
+        curso2.setProfessor(professor2);
+        mentoria.setProfessor(professor2);
+        
         /*System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria);*/

@@ -27,6 +27,7 @@ public class Curso extends Conteudo{
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
                 ", cargaHoraria=" + cargaHoraria +
+                ", professor='" + (getProfessor() != null ? getProfessor().getNome() : "Nenhum") + '\'' +
                 '}';
     }
 }
